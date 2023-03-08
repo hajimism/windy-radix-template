@@ -12,11 +12,20 @@ questions:
 ```tsx
 import { StoryObj, Meta } from '@storybook/react'
 
+import RootLayout from "@/app/layout";
+
 import { {{ inputs.name | pascal }} } from '.'
 
 const meta: Meta<typeof {{ inputs.name | pascal }}> = {
   title: 'components/{{ inputs.name | pascal }}',
   component: {{ inputs.name | pascal }},
+  decorators: [
+    (Story) => (
+      <RootLayout>
+        <Story />
+      </RootLayout>
+    ),
+  ],
 }
 
 export default meta
