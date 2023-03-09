@@ -1,5 +1,6 @@
 import { Github } from "lucide-react";
 
+import { ThemeSwitcher } from "@/components/functional/ThemeSwitcher";
 import { Button } from "@/components/ui/Button";
 import { H1, H2, List, P } from "@/components/ui/Typography";
 
@@ -36,18 +37,22 @@ export default function Home() {
         <li>Storybook</li>
         <li>ESLint import rules</li>
         <li>scaffdog template</li>
+        <li>Theme switcher</li>
       </List>
-      <Button>
-        <Github className="mr-2 h-4 w-4" />
-        <a
-          href="https://github.com/hajimism/windy-radix-template"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:underline"
-        >
-          View Source
-        </a>
-      </Button>
+      <div className="flex items-center gap-4">
+        <Button>
+          <Github className="mr-2 h-4 w-4" />
+          <a
+            href="https://github.com/hajimism/windy-radix-template"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline"
+          >
+            View Source
+          </a>
+        </Button>
+        <ThemeSwitcher />
+      </div>
     </div>
   );
 }
