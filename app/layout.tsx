@@ -1,5 +1,7 @@
 import { Inter } from "next/font/google";
 
+import { Toaster } from "@/components/ui/Toast";
+
 import { Providers } from "./provider";
 
 import "./tailwind.css";
@@ -17,10 +19,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={inter.variable}>
+    <html lang="en" suppressHydrationWarning className={inter.variable}>
+      <body className="font-inter">
         <Providers>
-          <main className="font-inter bg-sage-1 min-h-screen">{children}</main>
+          <main className="bg-sage-1 min-h-screen">{children}</main>
+          <Toaster />
         </Providers>
       </body>
     </html>

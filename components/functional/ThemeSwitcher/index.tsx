@@ -4,6 +4,8 @@ import { Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 
+import { useToast } from "@/hooks/ui/useToast";
+
 import { Toggle } from "@/components/ui/Toggle";
 import {
   Tooltip,
@@ -15,8 +17,16 @@ import {
 export const ThemeSwitcher = () => {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+  const { toast } = useToast();
 
-  const toggleTheme = () => setTheme(theme === "light" ? "dark" : "light");
+  const toggleTheme = () => {
+    const oppositeTheme = theme === "light" ? "dark" : "light";
+    setTheme(oppositeTheme);
+    toast({
+      title: "Theme toggled!",
+      description: `Current theme is ${oppositeTheme.toUpperCase()}`,
+    });
+  };
 
   // useEffect only runs on the client, so now we can safely show the UI
   useEffect(() => {
@@ -42,7 +52,7 @@ export const ThemeSwitcher = () => {
           </Toggle>
         </TooltipTrigger>
         <TooltipContent side="bottom">
-          <p>Current theme is {theme}. Toggle?</p>
+          <p>Current theme is {theme?.toUpperCase()}. Toggle?</p>
         </TooltipContent>
       </Tooltip>
     </TooltipProvider>
