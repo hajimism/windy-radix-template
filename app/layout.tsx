@@ -1,6 +1,11 @@
 import { Inter } from "next/font/google";
 
+import { Toaster } from "@/components/ui/Toast";
+
+import { Providers } from "./provider";
+
 import "./tailwind.css";
+
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata = {
@@ -14,9 +19,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.variable}>
-        <main className="font-inter">{children}</main>
+    <html lang="en" suppressHydrationWarning className={inter.variable}>
+      <body className="font-inter">
+        <Providers>
+          <main className="bg-sage-1 min-h-screen">{children}</main>
+          <Toaster />
+        </Providers>
       </body>
     </html>
   );
