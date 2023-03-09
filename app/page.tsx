@@ -8,6 +8,7 @@ export default function Home() {
   return (
     <div className="py-20 px-6 max-w-2xl mx-auto">
       <H1>Windy Radix Template</H1>
+      <H2>What&apos;s this?</H2>
       <P>Fusion of these cool projects😘</P>
       <List>
         <li>
@@ -57,7 +58,7 @@ export default function Home() {
       <H3>Change color</H3>
       <P>
         This template is now Green/Sage based. You can choose the combination
-        freely such as Violet/Mauve based or Blue/Slate based.
+        freely, such as Violet/Mauve based or Blue/Slate based.
       </P>
       <P>
         Check the{" "}

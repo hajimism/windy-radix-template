@@ -1,5 +1,7 @@
 # Windy Radix Template
 
+## What's this?
+
 Fusion of these cool projects😘
 
 - shadcn/ui
@@ -17,7 +19,7 @@ These are already prepared🤩
 
 ### Change color
 
-This template is now Green/Sage based. You can choose the combination freely such as Violet/Mauve based or Blue/Slate based.
+This template is now Green/Sage based. You can choose the combination freely, such as Violet/Mauve based or Blue/Slate based.
 
 Check the palette to customize effectively.
 
