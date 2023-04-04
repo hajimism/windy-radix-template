@@ -36,7 +36,7 @@
     "@storybook/addon-links": "^7.0.0-rc.5",
     "@storybook/addon-postcss": "^2.0.0",
     "@storybook/blocks": "^7.0.0-rc.5",
-    "@storybook/nextjs": "^7.0.0-rc.8",
+    "@storybook/nextjs": "^7.0.2",
     "@storybook/react": "^7.0.0-rc.5",
     "@storybook/testing-library": "^0.0.14--canary.30.5f44d14.0",
     "autoprefixer": "^10.4.13",
