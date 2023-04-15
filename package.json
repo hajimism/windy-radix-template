@@ -38,7 +38,7 @@
     "@storybook/blocks": "^7.0.0-rc.5",
     "@storybook/nextjs": "^7.0.2",
     "@storybook/react": "^7.0.0-rc.5",
-    "@storybook/testing-library": "^0.0.14--canary.30.5f44d14.0",
+    "@storybook/testing-library": "^0.1.0",
     "autoprefixer": "^10.4.14",
     "eslint-config-prettier": "^8.7.0",
     "eslint-plugin-import": "^2.27.5",
