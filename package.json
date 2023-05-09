@@ -48,6 +48,6 @@
     "scaffdog": "^2.5.0",
     "storybook": "^7.0.7",
     "tailwindcss": "^3.3.2",
-    "windy-radix-palette": "^0.5.0"
+    "windy-radix-palette": "^0.6.1"
   }
 }
